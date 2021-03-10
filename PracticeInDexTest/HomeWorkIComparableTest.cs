@@ -61,36 +61,24 @@ namespace PracticeInDexTest
         }
 
         [Test]
-        public bool SortingArrayBySquareTrue()
+        public void SortingArrayBySquareTrue()
         {
             Array.Sort(_arrayFigure,new CompareSquare());
             
             for (int i = 1; i < _arrayFigure.Length; i++)
             {
-                if (_arrayFigure[i - 1].Square() > _arrayFigure[i].Square())
-                {
-                    return false;
-                }
+                Assert.False(_arrayFigure[i - 1].Square() > _arrayFigure[i].Square());
             }
-
-            return true;
         }
         [Test]
-        public bool SortingArrayByPerimeterTrue()
+        public void SortingArrayByPerimeterTrue()
         {
-            Array.Sort(_arrayFigure,new CompareSquare());
+            Array.Sort(_arrayFigure,new ComparePerimeter());
             
             for (int i = 1; i < _arrayFigure.Length; i++)
             {
-                if (_arrayFigure[i - 1].Perimeter() > _arrayFigure[i].Perimeter())
-                {
-                    return false;
-                }
+                Assert.False(_arrayFigure[i - 1].Perimeter() > _arrayFigure[i].Perimeter());
             }
-
-            return true;
         }
     }
-
-    
 }
