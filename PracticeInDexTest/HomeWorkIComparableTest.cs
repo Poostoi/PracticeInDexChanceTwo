@@ -63,8 +63,12 @@ namespace PracticeInDexTest
         [Test]
         public void SortingArrayBySquareTrue()
         {
+            //arrange
+            
+            //act
             Array.Sort(_arrayFigure,new CompareSquare());
             
+            //assert
             for (int i = 1; i < _arrayFigure.Length; i++)
             {
                 Assert.False(_arrayFigure[i - 1].Square() > _arrayFigure[i].Square());
@@ -73,8 +77,12 @@ namespace PracticeInDexTest
         [Test]
         public void SortingArrayByPerimeterTrue()
         {
+            //arrange
+            
+            //act
             Array.Sort(_arrayFigure,new ComparePerimeter());
             
+            //assert
             for (int i = 1; i < _arrayFigure.Length; i++)
             {
                 Assert.False(_arrayFigure[i - 1].Perimeter() > _arrayFigure[i].Perimeter());
