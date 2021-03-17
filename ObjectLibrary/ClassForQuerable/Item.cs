@@ -16,5 +16,10 @@ namespace ObjectLibrary
             Date = date;
             Exist = exist;
         }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

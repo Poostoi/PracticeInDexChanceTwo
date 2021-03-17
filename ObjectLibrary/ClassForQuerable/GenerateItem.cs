@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
 
@@ -33,9 +34,9 @@ namespace ObjectLibrary
             var arraySortByNickname = _arrayItem.GroupBy(_arrayItem => _arrayItem.Name);
             return arraySortByNickname;
         }
-        public IEnumerable InsertNicknameWhereHelge()
+        public IEnumerable<Item> InsertNicknameWhereHelge()
         {
-            var arraySortByNickname = _arrayItem.Where(item => item.Name == "Helge");
+            IEnumerable<Item> arraySortByNickname = _arrayItem.Where(item => item.Name == "Helge");
             return arraySortByNickname;
         }
     }
