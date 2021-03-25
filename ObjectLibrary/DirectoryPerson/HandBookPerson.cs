@@ -16,18 +16,19 @@ namespace ObjectLibrary.DirectoryPerson
 
     public class HandBookPerson
     {
-        private Dictionary<Person, PlaceWork> _directory = new Dictionary<Person, PlaceWork>{};
+        private Dictionary<IPerson, PlaceWork> _directory = new Dictionary<IPerson, PlaceWork>{};
         
         
-        public void AddHandBookPerson(Person key, PlaceWork placeWork)
+        public void AddHandBookPerson(IPerson key, PlaceWork placeWork)
         {
             if (key == null|| placeWork == null)
                 throw new Exception("Не был введён ключ или место работы");
             _directory.Add(key, placeWork);
         }
 
-        public PlaceWork GetPlaceWork(Person person)
+        public PlaceWork GetPlaceWork(IPerson person)
         {
+            
             if (_directory.ContainsKey(person))
                 return _directory[person];
             return PlaceWork.Отсутствует;

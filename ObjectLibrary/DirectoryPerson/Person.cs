@@ -9,7 +9,7 @@ namespace ObjectLibrary.DirectoryPerson
         Benderi,
         Grigoriopol
     }
-    public class Person
+    public class Person: IPerson
     {
         private readonly string _fullName;
         private readonly string _dateOfBirth;

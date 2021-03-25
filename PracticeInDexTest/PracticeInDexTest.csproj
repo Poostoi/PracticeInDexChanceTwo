@@ -12,7 +12,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\ObjectLibrary\ObjectLibrary.csproj" />
-      <ProjectReference Include="..\PracticeInDexLibrary\PracticeInDexLibrary.csproj" />
+      
     </ItemGroup>
 
 </Project>

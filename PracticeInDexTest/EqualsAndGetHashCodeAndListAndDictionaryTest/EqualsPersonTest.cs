@@ -1,10 +1,7 @@
-using System;
-using System.Runtime.Serialization.Json;
 using NUnit.Framework;
-using NUnit.Framework.Internal;
 using ObjectLibrary.DirectoryPerson;
 
-namespace PracticeInDexTest.HomeWorkEqualsAndGetHashCodeAndListAndDictionaryTest
+namespace PracticeInDexTest.EqualsAndGetHashCodeAndListAndDictionaryTest
 {
     [TestFixture]
     public class EqualsPersonTest
