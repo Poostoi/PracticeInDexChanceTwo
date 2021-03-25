@@ -2,8 +2,7 @@ using System;
 using NUnit.Framework;
 using ObjectLibrary;
 
-
-namespace PracticeInDexTest.HomeWorkEqualsAndGetHashCodeAndListAndDictionaryTest
+namespace PracticeInDexTest
 {
     [TestFixture]
     public class HomeWorkIComparableTest

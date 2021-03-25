@@ -9,11 +9,11 @@ namespace PracticeInDexTest.HomeWorkEqualsAndGetHashCodeAndListAndDictionaryTest
     [TestFixture]
     public class EqualsPersonTest
     {
-        private Person person;
+        private Person _person;
         [SetUp]
         public void CreatePerson()
         {
-            person = new Person("Нагиев Григорий Андреевич", "10.03.1990",
+            _person = new Person("Нагиев Григорий Андреевич", "10.03.1990",
                 Town.Dubossari, 12345);
         }
 
@@ -26,7 +26,7 @@ namespace PracticeInDexTest.HomeWorkEqualsAndGetHashCodeAndListAndDictionaryTest
             var noClonePerson = new Person("Нагиев Григорий Андреевич", "10.03.1990",
                 Town.Dubossari, 12346);
             //Act    
-            var check = person.Equals(clonePerson) && !person.Equals(noClonePerson);
+            var check = _person.Equals(clonePerson) && !_person.Equals(noClonePerson);
             //Assert     
             Assert.True(check);
         }
@@ -34,7 +34,7 @@ namespace PracticeInDexTest.HomeWorkEqualsAndGetHashCodeAndListAndDictionaryTest
         public void GetHashCodeCheckFirstPropertyGetHashCodeTrue()
         {
             //Act
-            var check = person.GetHashCode() == person.GetHashCode() ;
+            var check = _person.GetHashCode() == _person.GetHashCode() ;
             //Assert
             Assert.True(check);
         }
@@ -48,8 +48,8 @@ namespace PracticeInDexTest.HomeWorkEqualsAndGetHashCodeAndListAndDictionaryTest
             var noClonePerson = new Person("Нагиев Григорий Андреевич", "10.03.1990",
                 Town.Dubossari, 12346);
             //Act
-            var check = person.GetHashCode() == clonePerson.GetHashCode() &&
-                        person.GetHashCode() != noClonePerson.GetHashCode();
+            var check = _person.GetHashCode() == clonePerson.GetHashCode() &&
+                        _person.GetHashCode() != noClonePerson.GetHashCode();
             //Assert
             Assert.True(check);
         }

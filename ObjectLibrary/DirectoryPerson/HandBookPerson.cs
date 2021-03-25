@@ -30,7 +30,7 @@ namespace ObjectLibrary.DirectoryPerson
         {
             if (_directory.ContainsKey(person))
                 return _directory[person];
-            else return PlaceWork.Отсутствует;
+            return PlaceWork.Отсутствует;
         }
 
     }

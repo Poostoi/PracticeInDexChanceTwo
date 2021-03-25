@@ -2,7 +2,7 @@ using System;
 
 namespace ObjectLibrary
 {
-    public abstract class Figure: IComparable
+    public abstract class Figure
     {
         public abstract double Square();
 
