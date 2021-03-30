@@ -28,5 +28,9 @@ namespace ObjectLibrary
         {
             return 2*(Length + Width);
         }
+        public override string ToString()
+        {
+            return "Прямоугольник";
+        }
     }
 }

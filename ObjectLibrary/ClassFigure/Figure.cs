@@ -2,7 +2,7 @@ using System;
 
 namespace ObjectLibrary
 {
-    public abstract class Figure
+    public abstract class Figure:IFigure
     {
         public abstract double Square();
 
@@ -30,6 +30,7 @@ namespace ObjectLibrary
             }
         }
 
-        
+        public abstract override string ToString();
+
     }
 }

@@ -19,6 +19,7 @@ namespace ObjectLibrary
             }
         }
 
+
         public override  double Square()
         {
             return Math.PI * Math.Pow(R, 2);
@@ -26,6 +27,11 @@ namespace ObjectLibrary
         public override  double Perimeter()
         {
             return 2*Math.PI * R;
+        }
+
+        public override string ToString()
+        {
+            return "Круг";
         }
     }
 }

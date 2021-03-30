@@ -1,8 +1,8 @@
 namespace ObjectLibrary
 {
-    public interface IFigure<out T>
+    public interface IFigure
     {
-        T Square(double a, double b);
-        T Perimeter(double a, double b);
+        double Square();
+        double Perimeter();
     }
 }

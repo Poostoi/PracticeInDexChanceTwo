@@ -33,5 +33,9 @@ namespace ObjectLibrary
         {
             return A + B + C;
         }
+        public override string ToString()
+        {
+            return "Треугольник";
+        }
     }
 }
